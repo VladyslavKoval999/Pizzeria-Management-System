@@ -150,11 +150,14 @@ F5
 
 in Visual Studio.
 
-## 🔐 Authentication
-
+## 🔐 Authentication & Test Credentials
 The application includes staff authentication with different roles and access to the corresponding functionality.
 
-For security reasons, real passwords should not be published in a public repository. If test credentials are required, they should be provided separately or replaced with dedicated demo credentials.
+For demonstration and testing purposes, the repository includes a local SQLite database pre-populated with test data. You can log in and explore the full functionality using the following administrator credentials:
+
+* **Role:** Administrator
+* **Login:** admin
+* **Password:** gbSndY3
 
 ## 📁 Project Structure
 
