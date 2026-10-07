@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5F98B71-5E22-4C17-930F-26236A102C44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diploma_NPT</RootNamespace>
+    <AssemblyName>Diploma_NPT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CartItem.cs" />
+    <Compile Include="ClassDataBase.cs" />
+    <Compile Include="Combos.cs" />
+    <Compile Include="DishesToOrder.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goods.cs" />
+    <Compile Include="Goods_combo.cs" />
+    <Compile Include="OrderingInAnInstitution.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="UserSession.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Photo_cursach\Authorization.zip" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %284%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.left %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.right %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.ukr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.angl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.cart %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.cart %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite">
+      <Version>9.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite.Core">
+      <Version>9.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <Version>2.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.core">
+      <Version>2.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3">
+      <Version>2.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl">
+      <Version>2.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="System.Buffers">
+      <Version>4.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Memory">
+      <Version>4.5.3</Version>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>4.5.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snacks\Грильовані_ковбаски.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snacks\Картопля_Фрі.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snacks\Крильця_BBQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snacks\Курячі_нагетси.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snacks\Начос_з_сиром.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snacks\Цибулеві_кільця.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Stocks\Акція_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Stocks\Акція_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Stocks\Logo_stocks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snaccs\Грильовані_ковбаски.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snaccs\Картопля_Фрі.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snaccs\Цибулеві_кільця.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snaccs\Курячі_нагетси.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snaccs\Начос_з_сиром.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Snaccs\Крильця_BBQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Kombo\Бургер-Комбо.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Kombo\Вегетаріанське_щастя.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Kombo\Класичне_комбо.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Kombo\Морське_задоволення.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Kombo\Піца-Комбо.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Photo_cursach\Kombo\Снекове_комбо.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Photo_cursach\Advertising\Доставка.jpg" />
+    <Content Include="Photo_cursach\Advertising\Нове_комбо.jpg" />
+    <Content Include="Photo_cursach\Advertising\Новинки.jpg" />
+    <Content Include="Photo_cursach\Advertising\Реклама.jpg" />
+    <Content Include="Photo_cursach\Advertising\Україна.jpg" />
+    <Content Include="Photo_cursach\Burgers\10_Бургер_з_сочевицею.jpg" />
+    <Content Include="Photo_cursach\Burgers\11_Грибний_бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\12_Бургер_з_тофу.jpg" />
+    <Content Include="Photo_cursach\Burgers\13_Бургер_з_квасолею.jpg" />
+    <Content Include="Photo_cursach\Burgers\14_Креветковий_бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\15_Бургер_з_тунцем.jpg" />
+    <Content Include="Photo_cursach\Burgers\16_Бургер_з_лососем.jpg" />
+    <Content Include="Photo_cursach\Burgers\17_Кальмаровий_бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\18_Бургер_з_мідіями.jpg" />
+    <Content Include="Photo_cursach\Burgers\1_Чізбургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\2_Дабл-чізбургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\3_Бекон-бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\4_Курячий_бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\5_Фіш-бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\6_Веган-бургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\7_Бургер_з_індичкою.jpg" />
+    <Content Include="Photo_cursach\Burgers\8_Тріпл-чізбургер.jpg" />
+    <Content Include="Photo_cursach\Burgers\9_Бургер_з_нутом.jpg" />
+    <Content Include="Photo_cursach\Drinks\10_Еспресо.jpg" />
+    <Content Include="Photo_cursach\Drinks\11_Мокко.jpg" />
+    <Content Include="Photo_cursach\Drinks\12_Флет_вайт.jpg" />
+    <Content Include="Photo_cursach\Drinks\13_Сік_Манго.jpg" />
+    <Content Include="Photo_cursach\Drinks\14_Сік_Апельсин-Грейпфрут.jpg" />
+    <Content Include="Photo_cursach\Drinks\15_Сік_Банан-Полуниця.jpg" />
+    <Content Include="Photo_cursach\Drinks\16_Сік_Апельсин.jpg" />
+    <Content Include="Photo_cursach\Drinks\17_Сік_Тропічні_фрукти.jpg" />
+    <Content Include="Photo_cursach\Drinks\18_Сік_Вишня.jpg" />
+    <Content Include="Photo_cursach\Drinks\1_Чай_чорний.jpg" />
+    <Content Include="Photo_cursach\Drinks\2_Чай_зелений.jpg" />
+    <Content Include="Photo_cursach\Drinks\3_Чай_трав’яний.jpg" />
+    <Content Include="Photo_cursach\Drinks\4_Чай_фруктовий.jpg" />
+    <Content Include="Photo_cursach\Drinks\5_Чай_імбирний.jpg" />
+    <Content Include="Photo_cursach\Drinks\6_Чай_м’ятний.jpg" />
+    <Content Include="Photo_cursach\Drinks\7_Кава_американо.jpg" />
+    <Content Include="Photo_cursach\Drinks\8_Капучино.jpg" />
+    <Content Include="Photo_cursach\Drinks\9_Лате.jpg" />
+    <Content Include="Photo_cursach\Kombo\Бургер-Комбо.jpg" />
+    <Content Include="Photo_cursach\Kombo\Вегетаріанське_щастя.jpg" />
+    <Content Include="Photo_cursach\Kombo\Класичне_комбо.jpg" />
+    <Content Include="Photo_cursach\Kombo\Морське_задоволення.jpg" />
+    <Content Include="Photo_cursach\Kombo\Піца-Комбо.jpg" />
+    <Content Include="Photo_cursach\Kombo\Снекове_комбо.jpg" />
+    <Content Include="Photo_cursach\Pizzas\10_Грибна.jpg" />
+    <Content Include="Photo_cursach\Pizzas\11_Овочева_фантазія.jpg" />
+    <Content Include="Photo_cursach\Pizzas\12_Зелена.jpg" />
+    <Content Include="Photo_cursach\Pizzas\13_Томатна.jpg" />
+    <Content Include="Photo_cursach\Pizzas\14_Кукурудзяна.jpg" />
+    <Content Include="Photo_cursach\Pizzas\15_Креветкова.jpg" />
+    <Content Include="Photo_cursach\Pizzas\16_Тунець.jpg" />
+    <Content Include="Photo_cursach\Pizzas\17_Океанічна.jpg" />
+    <Content Include="Photo_cursach\Pizzas\18_Лососева.jpg" />
+    <Content Include="Photo_cursach\Pizzas\1_Маргарита.jpg" />
+    <Content Include="Photo_cursach\Pizzas\2_Пепероні.jpg" />
+    <Content Include="Photo_cursach\Pizzas\3_Чотири_сири.jpg" />
+    <Content Include="Photo_cursach\Pizzas\4_Гавайська.jpg" />
+    <Content Include="Photo_cursach\Pizzas\5_BBQ.jpg" />
+    <Content Include="Photo_cursach\Pizzas\6_Вегетаріанська.jpg" />
+    <Content Include="Photo_cursach\Pizzas\7_Морська.jpg" />
+    <Content Include="Photo_cursach\Pizzas\8_Діабло.jpg" />
+    <Content Include="Photo_cursach\Pizzas\9_Карбонара.jpg" />
+    <Content Include="Photo_cursach\Snacks\Грильовані_ковбаски.jpg" />
+    <Content Include="Photo_cursach\Snacks\Картопля_Фрі.jpg" />
+    <Content Include="Photo_cursach\Snacks\Крильця_BBQ.jpg" />
+    <Content Include="Photo_cursach\Snacks\Курячі_нагетси.jpg" />
+    <Content Include="Photo_cursach\Snacks\Начос_з_сиром.jpg" />
+    <Content Include="Photo_cursach\Snacks\Цибулеві_кільця.jpg" />
+    <Content Include="Photo_cursach\Stocks\Logo_stocks.jpg" />
+    <Content Include="Photo_cursach\Stocks\Акція_1.jpg" />
+    <Content Include="Photo_cursach\Stocks\Акція_2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
